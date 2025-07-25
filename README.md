@@ -1,11 +1,8 @@
 # Task_05_Descriptive_Stats
-This project is focused on and Large Language Models (LLMs) to a public dataset and we explore match-level statistics from the IPL 2025 season. The main aim is to check if LLM gives the same answers as Python does or gives different or takes more time or does calculation errors. I used Chatgpt as LLM.
+This project explores match-level statistics from the IPL 2025 season using both Python and a Large Language Model (LLM), specifically ChatGPT. The main goal was to compare whether ChatGPT can deliver the same analytical outcomes as Python, and to observe any differences in accuracy, speed, or interpretation when working with structured datasets.
 
-So for this question LLM i used Chatgpt gave me the answer different answer i.e.
-Q)	Is there a statistically significant advantage to bowling first vs. batting first?
-P-value: 0.83 was provided by Chatgpt and python code gave me P-value: 0.7848 , even it doesnt change the final answer it remains as not statistically significant because of the (p > 0.05). 
+ChatGPT generally handled the small dataset efficiently and returned relevant results. However, some discrepancies were observed when compared with Python outputs. For instance, when asked whether there is a statistically significant advantage to bowling first versus batting first, ChatGPT returned a p-value of 0.83, while Python produced a slightly different result of 0.7848. Although the conclusion remained the same (no statistical significance, since p > 0.05), this minor inconsistency suggests that ChatGPT may approximate or round intermediate calculations differently than code-based statistical functions.
 
-In some of those Chatgpt provided results but took a bit longer then the python code.
-For example , in the following question
-Which city/venue saw the most closely contested matches (margin < 10 runs or < 2 wickets)?
-Chatgpt took long and also gave the wrong answer at first.
+In another case, ChatGPT was asked to identify the venue with the most closely contested matches (defined as a margin less than 10 runs or 2 wickets). It initially returned an incorrect answer and took noticeably longer to generate a response. In contrast, Python correctly and quickly identified Vishakhapatnam as the venue with the most close finishes. This example highlights ChatGPT’s limitations when it comes to precise filtering and comparison operations across large datasets.
+
+While ChatGPT performed adequately with this small dataset, my previous experience with larger datasets showed that it often becomes slower and less reliable for handling structured data at scale. These observations reinforce the importance of validating LLM-generated insights using traditional coding methods, especially when the task involves numerical precision, performance metrics, or complex filtering logic.
